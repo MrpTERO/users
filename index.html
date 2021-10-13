@@ -18,7 +18,11 @@
       			this.responseText;
     		}
   		};
-  		xhttp.open("GET", "users.json", true);
+		const myJSON = '{"user1" : "name" : "sosiska228","password" : "password1","role" : "dungeon master","id": 1}, "user2" : {      "name" : "armyanin",      "password" : "password2",      "role" : "leatherman",      "id": 2   },      "user3" : {      "name" : "zubastik",      "password" : "password3",      "role" : "performer artist",      "id": 3   }}';
+  		const myObj = JSON.parse(myJSON);
+  		x = myObj.name;
+  		xhttp.open("GET", x, true);
+  		
   		xhttp.send();
 		}
 </script>
