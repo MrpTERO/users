@@ -11,7 +11,7 @@
 
 <script>
 		function loadDoc() {
-  		const myJSON = '{"user1" {: "name" : "sosiska228","password" : "password1","role" : "dungeon master","id": 1}, "user2" : {      "name" : "armyanin",      "password" : "password2",      "role" : "leatherman",      "id": 2   },      "user3" : {      "name" : "zubastik",      "password" : "password3",      "role" : "performer artist",      "id": 3   }}';
+  		const myJSON = '{"user1" : { "name" : "sosiska228","password" : "password1","role" : "dungeon master","id": 1}, "user2" : {      "name" : "armyanin",      "password" : "password2",      "role" : "leatherman",      "id": 2   },      "user3" : {      "name" : "zubastik",      "password" : "password3",      "role" : "performer artist",      "id": 3   }}';
   		const myObj = JSON.parse(myJSON);
 		document.getElementById("demo").innerHTML = myObj["name"];
   		};
